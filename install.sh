@@ -1,9 +1,5 @@
 #!/bin/bash
 
-function printDelimiter {
-  echo "==========================================="
-}
-
 function printGreen {
   echo -e "\e[1m\e[32m${1}\e[0m"
 }
@@ -46,10 +42,10 @@ function install() {
         printGreen "Встановлення відмінено"
         exit 0
     fi
-    printDelimiter
+
+    echo ""
     printGreen "Тепер необхідно імпортувати закритий ключ ECDSA в Metamask, та слідкувати інструкції з гайду"
     source $HOME/.bash_profile
-    printDelimiter
 }
 
 install
