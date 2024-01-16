@@ -45,6 +45,7 @@ function install() {
 
     echo ""
     printGreen "Тепер необхідно імпортувати закритий ключ ECDSA в Metamask, та слідкувати інструкції з гайду"
+    touch /root/eigenlayer/cli/operator/config/operator-config.yaml
     source $HOME/.bash_profile
 }
 
